@@ -1,7 +1,7 @@
 version: '2.2'
 services:
   jenkins:
-    image: jenkins:latest
+    image: jenkins:2.60.3-alpine
     container_name: jenkins
     ports:
       - 8092:8080
