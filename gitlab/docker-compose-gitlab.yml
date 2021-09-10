@@ -1,13 +1,13 @@
 version: '2.2'
 services:
     gitlab:
-        image: 'gitlab/gitlab-ce:8.2.0-ce.0'
+        image: 'gitlab/gitlab-ce:13.12.11-ce.0'
         container_name: 'gitlab'   
         hostname: gitlab.local.com 
         ports:
-            - '80:80'
+            - '8081:80'
             - '443:443'
-            - '22:22'
+            - '22311:22'
             - '587:587'
         volumes:
             - './gitlab/config:/etc/gitlab'
